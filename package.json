@@ -1,0 +1,17 @@
+{
+  "name": "nconf-watchfile",
+  "version": "0.1.0",
+  "description": "Add a prototype method `watchFile` to `nconf.Prodiver` for auto-reloading any change in your config file.",
+  "main": "./lib/nconf-wacthfile",
+  "author": "Rong Shen <rong.shen@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jacobbubu/nconf-watchfile.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^1.6.1",
+    "lodash.omit": "^4.5.0",
+    "nconf": "^0.8.4"
+  }
+}
