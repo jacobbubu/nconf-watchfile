@@ -31,11 +31,11 @@ console.log(nconf.get())
 Any change in './test/test-config.json' in occured after `watchFile` calling will be merged to nconf store.
 
 ## Options
-  1. **file**: refer to https://github.com/indexzero/nconf#file. You can use any options `nconf.file` accepted(`secure`, `format`).
-  2. **onChange(store, path)**: A callback notifying the file change. `store` is the parsed value from config file.
-  3. **onError(err, path)**: A callback notifying the file change.
+  1. **file**: refer to https://github.com/indexzero/nconf#file. You can use any options that `nconf.file` accepted(`secure`, `format`).
+  2. **onChange(store, path)**: A callback will be fired while config file changed. `store` is the parsed value.
+  3. **onError(err, path)**: A callback will be fired while parsing failed.
   4. **watch**: Chokidar [optinons](https://github.com/paulmillr/chokidar#api) for file change monitoring.
-    * I've set `watch.ignoreInitial = true` to ignore the first change event.
+    * I've set `watch.ignoreInitial = true` to ignore first change event.
 
 ## Test
 TBD.
